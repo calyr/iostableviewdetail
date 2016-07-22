@@ -13,6 +13,7 @@
 		CF2066A31D42597A008DD2EB /* NuevoTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF2066A11D42597A008DD2EB /* NuevoTableView.xcdatamodeld */; };
 		CF2066A51D42597A008DD2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2066A41D42597A008DD2EB /* Assets.xcassets */; };
 		CF2066A81D42597A008DD2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2066A61D42597A008DD2EB /* LaunchScreen.storyboard */; };
+		CF2066B01D425B2D008DD2EB /* LibrosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2066AF1D425B2D008DD2EB /* LibrosController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CF2066A41D42597A008DD2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF2066A71D42597A008DD2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF2066A91D42597A008DD2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2066AF1D425B2D008DD2EB /* LibrosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibrosController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CF20669A1D42597A008DD2EB /* AppDelegate.swift */,
 				CF20669C1D42597A008DD2EB /* ViewController.swift */,
 				CF20669E1D42597A008DD2EB /* Main.storyboard */,
+				CF2066AF1D425B2D008DD2EB /* LibrosController.swift */,
 				CF2066A41D42597A008DD2EB /* Assets.xcassets */,
 				CF2066A61D42597A008DD2EB /* LaunchScreen.storyboard */,
 				CF2066A91D42597A008DD2EB /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2066B01D425B2D008DD2EB /* LibrosController.swift in Sources */,
 				CF2066A31D42597A008DD2EB /* NuevoTableView.xcdatamodeld in Sources */,
 				CF20669D1D42597A008DD2EB /* ViewController.swift in Sources */,
 				CF20669B1D42597A008DD2EB /* AppDelegate.swift in Sources */,
