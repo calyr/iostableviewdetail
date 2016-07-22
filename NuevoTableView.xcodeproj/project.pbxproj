@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF20669B1D42597A008DD2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF20669A1D42597A008DD2EB /* AppDelegate.swift */; };
+		CF20669D1D42597A008DD2EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF20669C1D42597A008DD2EB /* ViewController.swift */; };
+		CF2066A01D42597A008DD2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF20669E1D42597A008DD2EB /* Main.storyboard */; };
+		CF2066A31D42597A008DD2EB /* NuevoTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF2066A11D42597A008DD2EB /* NuevoTableView.xcdatamodeld */; };
+		CF2066A51D42597A008DD2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2066A41D42597A008DD2EB /* Assets.xcassets */; };
+		CF2066A81D42597A008DD2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2066A61D42597A008DD2EB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF2066971D42597A008DD2EB /* NuevoTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuevoTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF20669A1D42597A008DD2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF20669C1D42597A008DD2EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF20669F1D42597A008DD2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF2066A21D42597A008DD2EB /* NuevoTableView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NuevoTableView.xcdatamodel; sourceTree = "<group>"; };
+		CF2066A41D42597A008DD2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2066A71D42597A008DD2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF2066A91D42597A008DD2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2066941D42597A008DD2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF20668E1D42597A008DD2EB = {
+			isa = PBXGroup;
+			children = (
+				CF2066991D42597A008DD2EB /* NuevoTableView */,
+				CF2066981D42597A008DD2EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2066981D42597A008DD2EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2066971D42597A008DD2EB /* NuevoTableView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2066991D42597A008DD2EB /* NuevoTableView */ = {
+			isa = PBXGroup;
+			children = (
+				CF20669A1D42597A008DD2EB /* AppDelegate.swift */,
+				CF20669C1D42597A008DD2EB /* ViewController.swift */,
+				CF20669E1D42597A008DD2EB /* Main.storyboard */,
+				CF2066A41D42597A008DD2EB /* Assets.xcassets */,
+				CF2066A61D42597A008DD2EB /* LaunchScreen.storyboard */,
+				CF2066A91D42597A008DD2EB /* Info.plist */,
+				CF2066A11D42597A008DD2EB /* NuevoTableView.xcdatamodeld */,
+			);
+			path = NuevoTableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF2066961D42597A008DD2EB /* NuevoTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2066AC1D42597A008DD2EB /* Build configuration list for PBXNativeTarget "NuevoTableView" */;
+			buildPhases = (
+				CF2066931D42597A008DD2EB /* Sources */,
+				CF2066941D42597A008DD2EB /* Frameworks */,
+				CF2066951D42597A008DD2EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NuevoTableView;
+			productName = NuevoTableView;
+			productReference = CF2066971D42597A008DD2EB /* NuevoTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF20668F1D42597A008DD2EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Roberto Carlos Callisaya Mamani";
+				TargetAttributes = {
+					CF2066961D42597A008DD2EB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CF2066921D42597A008DD2EB /* Build configuration list for PBXProject "NuevoTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF20668E1D42597A008DD2EB;
+			productRefGroup = CF2066981D42597A008DD2EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF2066961D42597A008DD2EB /* NuevoTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF2066951D42597A008DD2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2066A81D42597A008DD2EB /* LaunchScreen.storyboard in Resources */,
+				CF2066A51D42597A008DD2EB /* Assets.xcassets in Resources */,
+				CF2066A01D42597A008DD2EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2066931D42597A008DD2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2066A31D42597A008DD2EB /* NuevoTableView.xcdatamodeld in Sources */,
+				CF20669D1D42597A008DD2EB /* ViewController.swift in Sources */,
+				CF20669B1D42597A008DD2EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF20669E1D42597A008DD2EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF20669F1D42597A008DD2EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF2066A61D42597A008DD2EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2066A71D42597A008DD2EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF2066AA1D42597A008DD2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF2066AB1D42597A008DD2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF2066AD1D42597A008DD2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NuevoTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cousera.com.NuevoTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF2066AE1D42597A008DD2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NuevoTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cousera.com.NuevoTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2066921D42597A008DD2EB /* Build configuration list for PBXProject "NuevoTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2066AA1D42597A008DD2EB /* Debug */,
+				CF2066AB1D42597A008DD2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2066AC1D42597A008DD2EB /* Build configuration list for PBXNativeTarget "NuevoTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2066AD1D42597A008DD2EB /* Debug */,
+				CF2066AE1D42597A008DD2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF2066A11D42597A008DD2EB /* NuevoTableView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF2066A21D42597A008DD2EB /* NuevoTableView.xcdatamodel */,
+			);
+			currentVersion = CF2066A21D42597A008DD2EB /* NuevoTableView.xcdatamodel */;
+			path = NuevoTableView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF20668F1D42597A008DD2EB /* Project object */;
+}
