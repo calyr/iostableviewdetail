@@ -29,10 +29,18 @@ class LibrosController: UITableViewController {
         return toDoItems.count
         
     }
-    internal override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
-        cell.textLabel?.text = toDoItems[indexPath.row]
-        
+    internal override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->
+        UITableViewCell{
+            
+        let cellIdentifier = "CellBook"
+        /*
+ let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell") as! Celda
+        cell.titulo.text = toDoItems[indexPath.row]
+        //cell.textLabel?.text = toDoItems[indexPath.row]
+ */
+            
+ let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! Celda
+        cell.titulo.text = toDoItems[indexPath.row]
         return cell
     }
     
@@ -41,14 +49,9 @@ class LibrosController: UITableViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if( segue.identifier == "DetailView"){
+            print("Se presiono el boton de detalle")
+        }
     }
-    */
-
 }

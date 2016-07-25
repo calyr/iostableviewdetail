@@ -34,7 +34,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1998" y="322"/>
+            <point key="canvasLocation" x="2172" y="-803"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0vv-Sv-QSu">
+            <objects>
+                <viewController id="lgG-Zv-J0z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oDu-Oq-wG6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Usj-df-ADX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kt1-oe-IdH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kuT-bj-sHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2148" y="406"/>
         </scene>
         <!--Mis Libros-->
         <scene sceneID="TYZ-Js-RFs">
@@ -45,13 +63,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="SAn-eQ-tFs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellBook" id="EKP-Re-ES2" customClass="Celda" customModule="NuevoTableView" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SAn-eQ-tFs" id="aLX-9U-Xj5">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EKP-Re-ES2" id="605-NY-U5e">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9n-yR-p1M">
+                                            <rect key="frame" x="47" y="8" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titulo" destination="A9n-yR-p1M" id="Kk9-uo-WU8"/>
+                                    <segue destination="lgG-Zv-J0z" kind="showDetail" identifier="DetailView" action="showViewController:sender:" id="COZ-Ag-aB0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -60,9 +90,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Mis Libros" id="V1Q-Kb-AJQ">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="YZb-KW-9Wm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YZb-KW-9Wm">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="iJP-oi-IOc"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="BusquedaView" id="iJP-oi-IOc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

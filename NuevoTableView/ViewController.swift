@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buscar(sender: UITextField) {
-    
+    toDoItems.append(sender.text!)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
