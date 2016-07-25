@@ -8,7 +8,7 @@
 
 import UIKit
 
-var toDoItems : [String] = []
+var toDoItems : [Libro] = []
 
 class LibrosController: UITableViewController {
 
@@ -33,14 +33,9 @@ class LibrosController: UITableViewController {
         UITableViewCell{
             
         let cellIdentifier = "CellBook"
-        /*
- let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell") as! Celda
-        cell.titulo.text = toDoItems[indexPath.row]
-        //cell.textLabel?.text = toDoItems[indexPath.row]
- */
             
  let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! Celda
-        cell.titulo.text = toDoItems[indexPath.row]
+        cell.titulo.text = toDoItems[indexPath.row].titulo
         return cell
     }
     
@@ -50,8 +45,23 @@ class LibrosController: UITableViewController {
     
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if( segue.identifier == "DetailView"){
             print("Se presiono el boton de detalle")
+            let detailView = segue.destinationViewController as! DetailViewController
+            
+            if let selectedBookCel = sender as? Celda {
+                let indexPath = tableView.indexPathForCell(selectedBookCel)!
+                print(indexPath.row)
+                print(toDoItems)
+                detailView.index = indexPath.row
+                //!.text = toDoItems[indexPath.row].titulo
+                //detailView.autores.text = toDoItems[indexPath.row].autores
+                //detailView.isnb.text = toDoItems[indexPath.row].isnb
+                //detailView.cover.image = toDoItems[indexPath.row].cover.image!
+            }
+            
+            
         }
     }
 }
