@@ -7,18 +7,47 @@
 //
 
 import UIKit
+import CoreData
 
 var toDoItems : [Libro] = []
 
 class LibrosController: UITableViewController {
 
+    var contexto : NSManagedObjectContext? = nil
     @IBOutlet var tableBooks: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.contexto = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        
+        let libroEntity = NSEntityDescription.entityForName("Libro", inManagedObjectContext: self.contexto!)
+        
+        let peticion = libroEntity?.managedObjectModel.fetchRequestTemplateForName("getLibros")
+        
+        do{
+            let librosEntidad = try self.contexto?.executeFetchRequest(peticion!)
+            
+            toDoItems = []
+            for libro in librosEntidad!{
+                let isnb = libro.valueForKey("isbn") as! String
+                let titulo = libro.valueForKey("titulo") as! String
+                  let imagen = UIImage(data: (libro.valueForKey("imagen") as? NSData)!)
+                print("El isbn buscado es \(isnb)")
+                let libroObj = Libro()
+                libroObj.isnb = isnb
+                libroObj.titulo = titulo
+                libroObj.cover.image = imagen
+                libroObj.autores = (libro.valueForKey("autores") as? String)!
+                toDoItems.append(libroObj)
+            }
+            
+        }catch{
+        
+        }
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
